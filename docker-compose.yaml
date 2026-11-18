@@ -55,9 +55,9 @@ services:
     # mapping. That proxy is exactly what this bypasses: it sets
     # X-Forwarded-For, which closes the LOCAL_ONLY gate no matter where the
     # request came from.
-    ports:
-      - "${OMNIROUTE_BIND_HOST:-127.0.0.1}:20128:20128"
-      - "${OMNIROUTE_BIND_HOST:-127.0.0.1}:20132:20132"
+    # ports:
+    #   - "${OMNIROUTE_BIND_HOST:-127.0.0.1}:20128:20128"
+    #   - "${OMNIROUTE_BIND_HOST:-127.0.0.1}:20132:20132"
     environment:
       # ── ROUTING ──
       - SERVICE_FQDN_OMNIROUTE_20128
